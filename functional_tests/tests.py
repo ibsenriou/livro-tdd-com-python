@@ -72,6 +72,7 @@ class NewVisitorTest(LiveServerTestCase):
         self.wait_for_row_in_list_table('1: Buy peacock feathers')
 
         # Satisfeita, ela volta a dormir
+        time.sleep(5)
 
     def test_multiple_users_ca_start_lists_at_different_urls(self):
         # Edith inicia uma nova lista de tarefas
@@ -89,8 +90,8 @@ class NewVisitorTest(LiveServerTestCase):
 
         ## Usamos uma nova sessão do navegador para garantir que nenhuma informação
         ## de Edith está vindo de cookies etc
+        time.sleep(3)
         self.browser.quit()
-
 
         self.browser = webdriver.Firefox()
 
@@ -118,3 +119,4 @@ class NewVisitorTest(LiveServerTestCase):
         self.assertIn('Buy milk', page_text)
 
         # Satisfeitos, ambos voltam a dormir
+        time.sleep(3)
