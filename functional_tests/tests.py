@@ -14,12 +14,10 @@ class NewVisitorTest(LiveServerTestCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()
-        time.sleep(1)
 
     def tearDown(self):
-        time.sleep(1)
+        time.sleep(5)
         self.browser.quit()
-        time.sleep(1)
 
     def wait_for_row_in_list_table(self, row_text):
         start_time = time.time()
