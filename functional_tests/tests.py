@@ -91,7 +91,6 @@ class NewVisitorTest(LiveServerTestCase):
         ## de Edith está vindo de cookies etc
         self.browser.quit()
 
-        time.sleep(5)
 
         self.browser = webdriver.Firefox()
 
