@@ -23,9 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=g8eah$zv$i^(2q*4d$xymf5bqki3w4jtc!f!cxsa7%5(_n!7$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+TEMPLATE_DEBUG = DEBUG
+
+
+ALLOWED_HOSTS = ['www.violet-software-solutions.com.br']
 
 
 # Application definition
