@@ -27,12 +27,10 @@ class NewVisitorTest(FunctionalTest):
         # texto (o hobby de Edith é fazer iscas para pesca com fly)
         inputbox.send_keys('Buy peacock feathers')
 
-
         # Quando ela tecla enter, a página é atualizada, e agora a página lista
         # "1: Buy peacock feathers" como um item em uma lista de tarefas
         inputbox.send_keys(Keys.ENTER)
         self.wait_for_row_in_list_table('1: Buy peacock feathers')
-        
 
         # Ainda continua havendo uma caixa de texto convidando-a a acrescentar outro
         # item. Ela insere "Use peacock feathers to make a fly" (Edith é bem metódica)
